@@ -9,7 +9,12 @@ DEPARTURE_DATE_FIELD = "//*[@id='BE_flight_origin_date']"
 DATE_LIST = "//*[@id='monthWrapper']//tbody//td[@class!='inActiveTD' and @class!='inActiveTD weekend']"
 REQUIRED_DATE = "//*[@id='monthWrapper']//tbody//td[@id='{}']"
 SEARCH_FLIGHTS_BTN = "//*[@value='Search Flights']"
-
+BUSES_ICON = "//*[@id='booking_engine_buses']"
+BUS_ORIGIN_FIELD = "//*[@id='BE_bus_from_station']"
+BUS_REQ_FROM_TO_CITY = "//*[contains(text(),'{}')]"
+BUS_DEST_FIELD = "//*[@id='BE_bus_to_station']"
+BUS_DATE_FIELD = "//*[@id='BE_bus_depart_date']"
+SEARCH_BUSES_BTN = "//*[@value='Search Buses']"
 
 # SEARCH RESULT PAGE
 STOPS_BTN = "//*[contains(@class,'filter-stops')]//p[text()='{}']"

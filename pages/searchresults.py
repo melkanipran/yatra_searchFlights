@@ -5,10 +5,9 @@ from base.xpaths import *
 from base.Basedriver import BaseDriver
 
 class SearchResult(BaseDriver):
-    def __init__(self, driver, wait):
+    def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
-        self.wait = wait
 
     def select_stops(self, total_stop):
         stop_btn = self.visibility_of_element(STOPS_BTN.format(total_stop))

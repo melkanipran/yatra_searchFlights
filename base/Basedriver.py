@@ -1,5 +1,6 @@
 import time
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -30,6 +31,9 @@ class BaseDriver:
 
     def send_keys(self, elm, key_inp):
         try:
+            elm.send_keys(Keys.CONTROL + 'A')
+            time.sleep(1)
+            elm.send_keys(Keys.BACKSPACE)
             elm.send_keys(key_inp)
             time.sleep(1)
         except Exception as e:
